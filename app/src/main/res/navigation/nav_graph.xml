@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.tplogin.DashboardFragment"
+        tools:layout="@layout/fragment_dashboard"
+        android:label="DashboardFragment" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_profileFragment4"
+            app:destination="@id/profileFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        tools:layout="@layout/fragment_user_list"
+        android:name="com.example.tplogin.UserListFragment"
+        android:label="UserListFragment" />
+    <fragment
+        android:id="@+id/profileFragment4"
+        tools:layout="@layout/profil_activity"
+        android:name="ProfileFragment"
+        android:label="ProfileFragment" />
+
+
+
+</navigation>
